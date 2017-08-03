@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Lista de Alunos</title>
+  <title>Histórico</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -22,9 +22,9 @@
             <a class="navbar-brand navTitle" href="index2.html">SigPPG</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav">
+              <li><a href="listaaluno2.html" class="navText">Listar Alunos</a></li>
               <li><a href="listaavaliador.html" class="navText">Atribuir Permissão</a></li>
-              <li><a href="historico.html" class="navText">Histórico de Bolsas</a></li>
               <li class="dropdown">
                   <a href="#" class="dropdown-toggle navText" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Cadastro<span class="caret"></span></a>
                   <ul class="dropdown-menu">
@@ -34,79 +34,71 @@
                   </ul>
               </li>
             </ul>
-            <p class="navbar-text navbar-right navText2">Signed in as <a href="index.html" class="navbar-link">Eduardo Almeida</a></p>
+              <p class="navbar-text navbar-right navText2">Signed in as <a href="index.html" class="navbar-link">Eduardo Almeida</a></p>
         </div>
       </div>
   </nav>
   <header>
-    <h2 class="sectionTitle">Lista de Alunos</h2>
+    <h2 class="sectionTitle">Histórico de Bolsas</h2>
   </header>
   <section>
-        <div class="panel panel-default">
-          <div class="panel-heading">Lista de Alunos</div>
+    <select class="tipos">
+      <option value="CnPq - Mestrado">CNPq - Mestrado</option>
+      <option value="CnPq - Doutorado">CNPq - Doutorado</option>
+      <option value="Capes">Capes</option>
+      <option value="Outros">Outros</option>
+    </select>
+    <a href="historico2.html" class="btn btn-primary">
+      <span class="glyphicon glyphicon-search"></span>
+    </a>
+    <div class="panel panel-default">
+          <div class="panel-heading">Histórico de Bolsas - CNPq - Mestrado</div>
             <table class="table">
               <thead>
                 <tr>
                   <th>#</th>
+                  <th>Data Inicio</th>
+                  <th>Data Fim</th>
                   <th>Aluno</th>
-                  <th>C.R</th>
                   <th>Orientador</th>
-                  <th>Bolsa</th>
-                  <th>Duração</th>
-                  <th></th>
-                  <th></th>
-                  <th></th>
+                  <th>Área de Pesquisa</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">1</th>
+                  <td>01/08/2017</td>
+                  <td>01/08/2018</td>
                   <td>Lucas Almeida</td>
-                  <td>7.5</td>
                   <td>Ivan Machado</td>
-                  <td>Pesquisa sobre Reuso</td>
-                  <td>07 Meses</td>
-                  <td><button type="button" class="btn btn-primary listButton">Editar Aluno</button></td>
-                  <td><button type="button" class="btn btn-primary listButton">Atribuir Bolsa</button></td>
-                  <td><button type="button" class="btn btn-danger btn-primary listButton">Revogar Bolsa</button></td>
+                  <td>Reuso de Software</td>
                 <tr>
                 <tr>
                   <th scope="row">2</th>
+                  <td>27/07/2017</td>
+                  <td>05/08/2018</td>
                   <td>Natan Bispo</td>
-                  <td>7.3</td>
                   <td>Ivan Machado</td>
-                  <td>Pesquisa sobre Teste</td>
-                  <td>05 Meses</td>
-                  <td><button type="button" class="btn btn-primary listButton">Editar Aluno</button></td>
-                  <td><button type="button" class="btn btn-primary listButton">Atribuir Bolsa</button></td>
-                  <td><button type="button" class="btn btn-danger btn-primary listButton">Revogar Bolsa</button></td>
+                  <td>Teste de Software</td>
                 <tr>
                 <tr>
                   <th scope="row">3</th>
+                  <td>04/04/2017</td>
+                  <td>01/12/2018</td>
                   <td>Michelle Araújo</td>
-                  <td>7.0</td>
                   <td>Vinicius Petrucci</td>
-                  <td>Pesquisa sobre Compiladores</td>
-                  <td class="eoq">12 Meses</td>
-                  <td><button type="button" class="btn btn-primary listButton">Editar Aluno</button></td>
-                  <td><button type="button" class="btn btn-primary listButton">Atribuir Bolsa</button></td>
-                  <td><button type="button" class="btn btn-danger btn-primary listButton">Revogar Bolsa</button></td>
+                  <td>Compiladores</td>
                 <tr>
                 <tr>
                   <th scope="row">4</th>
+                  <td>07/05/2016</td>
+                  <td>01/08/2017</td>
                   <td>Monira</td>
-                  <td>7.0</td>
                   <td>Manoel Mendonça</td>
-                  <td>Pesquisa sobre Qualidade de Software</td>
-                  <td>03 Meses</td>
-                  <td><button type="button" class="btn btn-primary listButton">Editar Aluno</button></td>
-                  <td><button type="button" class="btn btn-primary listButton">Atribuir Bolsa</button></td>
-                  <td><button type="button" class="btn btn-danger btn-primary listButton">Revogar Bolsa</button></td>
+                  <td>Qualidade de Software</td>
                 <tr>            
 
             </table>
-        </div>
-
   </section>
    <footer class="footer colorPalets">
       <div class="container">

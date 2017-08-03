@@ -7,6 +7,10 @@
     border-bottom: 1px solid #003366;
 }
 
+.navSize{
+    width: 100%;
+}
+
 .navTitle{
 	line-height: 25px;
 	color: white;
@@ -64,4 +68,55 @@ footer {
     margin: 8px 0;
     box-sizing: border-box;
 	border-radius: 5px;
+}
+
+.listButton{
+	font-weight: bolder;
+	line-height: 25px;
+}	
+
+.tipos {
+	width: 230px ;
+	border-radius: 5px;
+}
+
+.buscaCard {
+	width: 85%;
+	margin-left: 7%;
+	margin-right: 5%;
+
+}
+.inputHistorico {
+	width: 230px ;
+	border-radius: 5px;
+}
+
+.preRow1 {
+	float: right;
+
+}
+.row1 {
+	min-width: 400px;
+
+}
+
+.preRow2 {
+	float: right;
+
+}
+.row2 {
+	min-width: 210px;
+
+}
+
+.preRow3 {
+	float: center;
+
+}
+.row3 {
+	min-width: 200px;
+
+}
+
+.searchButton {
 }
